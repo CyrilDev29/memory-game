@@ -4,12 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jeu de Memory</title>
-    <link rel="stylesheet" href="style.css" />
-
+    <title>Connexion</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+
     <nav>
         <ul>
             <li><a href="index.html">Accueil</a></li>
@@ -20,27 +20,29 @@
         </ul>
     </nav>
 
-    <h1>Se connecter </h1>
+    <h1>Se connecter</h1>
 
-    <form>
-        <div>
-            <label for="Nom d'utilisateur">Nom d'utilisateur :</label>
-            <input type="text" id="username" required>
-        </div>
+    <div class="form-container">
+        <form id="form-connexion">
+            <div>
+                <label for="username">Nom d'utilisateur</label>
+                <input type="text" id="username" required>
+            </div>
 
-        <div>
-            <label for="password">Mot de passe :</label>
-            <input type="password" id="password" required>
-        </div>
+            <div>
+                <label for="password">Mot de passe</label>
+                <input type="password" id="password" required>
+            </div>
 
-        <div>
-            <button type="submit">Se connecter</button>
-        </div>
-    </form>
+            <div id="message" class="message-erreur"></div>
 
+            <div>
+                <button type="submit">Se connecter</button>
+            </div>
+        </form>
+    </div>
 
-
-    <script src="script.js"></script>
+    <script src="connexion.js"></script>
 </body>
 
 </html>

@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", () => {       // Permet d'attendre
 
           if (src === premiereCarte.src) { // si les deux cartes sont identiques
             setTimeout(() => {
-              pairesTrouvées++;  // augmente le nombre de paires trouvée
+              pairesTrouvées++;  // incrémente le nombre de paires trouvée
               if (pairesTrouvées === 6) alert("Bravo tu as gagné !");
               premiereCarte = null;
               verrouillage = false;
